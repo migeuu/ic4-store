@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [4.4.1] - 2021-06-28
+## [4.4.2] - 2021-07-02
+### Fixed
+- Wrong condition subject being used in `condition-layout` example.
+
+## [4.4.1] - 2021-06-28 [YANKED]
 ### Added
 - Example of conditional-layout usage on the product-page
 
