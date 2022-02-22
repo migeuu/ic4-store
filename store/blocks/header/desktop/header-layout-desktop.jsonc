@@ -1,0 +1,136 @@
+{
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#top-menu",
+      "flex-layout.row#header-bar",
+      "flex-layout.row#menu-wrapper"
+    ]
+  },
+  "flex-layout.row#top-menu": {
+    "children": [
+      "flex-layout.row#header-tab"
+    ],
+    "props": {
+      "blockClass": "topMenu"
+    }
+  },
+  "flex-layout.row#header-tab": {
+    "children": [
+      "rich-text#freight-text",
+      "flex-layout.row#option-link"
+    ],
+    "props": {
+      "margin": 0,
+      "padding": 0,
+      "blockClass": "headerTab"
+    }
+  },
+  "rich-text#freight-text": {
+    "props": {
+      "text": "Frete Grátis acima de R$299,00 para Região Sudoeste.",
+      "blockClass": "textHeaderTab"
+    }
+  },
+  "flex-layout.row#option-link": {
+    "children": [
+      "flex-layout.col#revendor",
+      "rich-text#bar",
+      "flex-layout.col#representative"
+    ],
+    "props": {
+      "rowGap": 120
+    }
+  },
+  "flex-layout.col#revendor": {
+    "children": [
+      "rich-text#revendor"
+    ]
+  },
+  "rich-text#revendor": {
+    "props": {
+      "text": "SEJA UM REVENDEDOR",
+      "blockClass": "textHeaderTab",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#bar": {
+    "props": {
+      "text": "|",
+      "blockClass": "bar",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#representative": {
+    "children": [
+      "rich-text#representative"
+    ]
+  },
+  "rich-text#representative": {
+    "props": {
+      "text": "SEJA UM REPRESENTANTE",
+      "blockClass": "textHeaderTab",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#header-bar": {
+    "props": {
+      "blockClass": "headerBar",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#header-wrapper"
+    ]
+  },
+  "flex-layout.row#header-wrapper": {
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "link#client-support",
+      "login#login-component",
+      "minicart.v2"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "headerWrapper"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "children": [
+      "logo#logo-store"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "logo#logo-store": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://blog.penseavanti.com.br/wp-content/uploads/2019/08/logo_avanti5-1024x173.png",
+      "width": 200,
+      "height": 40
+    }
+  },
+  "link#client-support": {
+    "props": {
+      "href": "#",
+      "label": "Atendimento ao Cliente"
+    }
+  },
+  "login#login-component": {
+    "props": {
+      "showIconProfile": true,
+      "hideIconLabel": true
+    }
+  }
+}

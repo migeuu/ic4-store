@@ -1,0 +1,70 @@
+.flexRow--topMenu {
+  background-color: #25282a;
+}
+
+.flexRow--headerTab {
+  max-width: 1250px;
+}
+
+.flexCol--revendorContainer {
+  border-right: 1px solid white;
+}
+
+.flexRow--headerBar {
+  background-color: #eeeeee;
+  padding-top: 0.5rem;
+}
+
+.flexRow--headerWrapper {
+  width: 1250px;
+}
+
+.flexRowContent--headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexRowContent--headerWrapper
+  :global(.vtex-store-components-3-x-logoContainer) {
+  padding: 0;
+}
+
+.flexRowContent--headerWrapper :global(.vtex-input-prefix__group) {
+  height: 50px;
+}
+
+.flexRowContent--headerWrapper :global(.vtex-input__suffix) {
+  background-color: #441afa;
+}
+
+.flexRowContent--headerWrapper
+  :global(.vtex-store-components-3-x-searchBarIcon--search) {
+  padding: 5px;
+  color: white;
+}
+
+.flexRowContent--headerWrapper :global(.vtex-styleguide-9-x-input) {
+  width: 550px;
+}
+
+.flexRowContent--headerWrapper
+  :global(.vtex-minicart-2-x-minicartQuantityBadge) {
+  background-color: #441afa;
+}
+
+.flexRow--menuWrapper {
+  background-color: #eeeeee;
+}
+
+.flexRow--menuContainer {
+  max-width: 1250px;
+}
+
+.flexRowContent--menuContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -29,7 +29,6 @@
     "props": {
       "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",

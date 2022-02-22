@@ -2,21 +2,73 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "rich-text#link"
+      // "responsive-layout.desktop#home",
+      // "responsive-layout.mobile#home"
     ]
   },
-
+  // "responsive-layout.desktop#home": {
+  //   "children": [
+  //     "rich-text#desktop"
+  //   ]
+  // },
+  // "responsive-layout.mobile#home": {
+  //   "children": [
+  //     "slider-layout#text-test",
+  //     "rich-text#mobile"
+  //   ]
+  // },
+  "slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "rich-text#1",
+      "rich-text#2",
+      "rich-text#3"
+    ]
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "Test1"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Test2"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "Test3"
+    }
+  },
+  "rich-text#desktop": {
+    "props": {
+      "text": "Oitudobem"
+    }
+  },
+  "rich-text#mobile": {
+    "props": {
+      "text": "Oitudobem MOBILE"
+    }
+  },
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 720,
       "images": [
@@ -43,7 +95,6 @@
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
       "text": "## Summer",
@@ -51,11 +102,17 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#demo1"
+    ]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -72,7 +129,6 @@
       "blockClass": "shelf"
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -86,14 +142,12 @@
       "textAlignment": "center"
     }
   },
-
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",

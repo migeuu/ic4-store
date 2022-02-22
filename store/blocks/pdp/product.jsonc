@@ -25,19 +25,23 @@
     "props": {
       "marginTop": 4
     },
-    "children": ["breadcrumb"]
+    "children": [
+      "breadcrumb"
+    ]
   },
   "flex-layout.row#description": {
     "props": {
       "marginBottom": 7
     },
-    "children": ["product-description"]
+    "children": [
+      "product-description"
+    ]
   },
   "condition-layout.product#availability": {
     "props": {
       "conditions": [
         {
-          "subject": "isProductAvailability"
+          "subject": "isProductAvailable"
         }
       ],
       "Then": "flex-layout.row#product-main",
@@ -53,9 +57,11 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col"
+    ]
   },
-
   "stack-layout": {
     "props": {
       "blockClass": "product"
@@ -66,7 +72,6 @@
       "product-specification-badges"
     ]
   },
-
   "product-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
@@ -75,16 +80,19 @@
       "displayValue": "SPECIFICATION_NAME"
     }
   },
-
   "flex-layout.col#stack": {
-    "children": ["stack-layout"],
+    "children": [
+      "stack-layout"
+    ],
     "props": {
       "width": "60%",
       "rowGap": 0
     }
   },
   "flex-layout.row#product-image": {
-    "children": ["product-images"]
+    "children": [
+      "product-images"
+    ]
   },
   "product-images": {
     "props": {
@@ -118,29 +126,29 @@
       "share#default"
     ]
   },
-
   "flex-layout.row#product-name": {
     "props": {
       "marginBottom": 3
     },
-    "children": ["vtex.store-components:product-name"]
+    "children": [
+      "vtex.store-components:product-name"
+    ]
   },
-
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
       "showValueNameForImageVariation": true
     }
   },
-
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": ["add-to-cart-button"]
+    "children": [
+      "add-to-cart-button"
+    ]
   },
-
   "flex-layout.row#product-availability": {
     "props": {
       "colGap": 7,
@@ -148,7 +156,10 @@
       "marginBottom": 7,
       "paddingTop": 7
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#right-col-availability"]
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-availability"
+    ]
   },
   "flex-layout.col#right-col-availability": {
     "props": {
@@ -171,7 +182,6 @@
       "availability-subscriber"
     ]
   },
-
   "share#default": {
     "props": {
       "social": {
