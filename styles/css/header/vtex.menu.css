@@ -1,27 +1,70 @@
-.menuItem {
-  padding: 0.8rem;
-}
-
-.menuItemContainer--allDepartment {
-  width: 900px;
-  background-color: aliceblue;
-}
-
-.menuItem--allDepartment {
-  width: 300px;
+.menuContainer--allDepartment {
   background-color: #441afa;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.menuItem--allDepartment :global(.vtex-menu-2-x-styledLinkContent) {
-  color: #000;
+.styledLinkContent--allDepartmentItem {
+  padding-left: 30px;
+  padding-right: 10px;
+  color: #fff;
   font-weight: bold;
   font-size: 14px;
-  padding: 0 20px 0 20px;
 }
 
-.menuItemInnerDiv {
-  width: 250px;
+.styledLink--allDepartmentItem
+  :global(.vtex-menu-2-x-styledLinkContent)::before {
+  content: "";
+  position: relative;
+  right: 14px;
+  width: 20px;
+  height: 14px;
+  background-image: url("https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/menu-branco___d782ee8899a81fa256d85766cd68e76d.png");
+}
+
+.styledLinkContainer--departament {
+  padding: 15px 0 15px 0;
+  padding-right: 160px;
+}
+
+.styledLinkContent--departament {
+  font-size: 14px;
+}
+
+.styledLinkContainer--categoryAllDep {
+  padding: 15px 0 15px 0;
+  padding-right: 192px;
+}
+
+.styledLinkContent--categoryAllDep {
+  font-size: 14px;
+}
+
+.submenuContainer--submenuCategory {
+  position: relative;
+  left: 314px;
+  top: -58px;
+}
+
+.submenuContainer--submenuSubCategory {
+  position: relative;
+  left: 316px;
+  top: -58px;
+}
+
+.submenuContainer--submenuSubCategory2 {
+  position: relative;
+  left: 316px;
+  top: -104px;
+}
+
+.styledLinkContainer--subCategoryItem {
+  padding: 15px 0 15px 0;
+  padding-right: 192px;
+}
+
+.styledLinkContent--subCategoryItem {
+  font-size: 14px;
 }

@@ -17,7 +17,7 @@
   "flex-layout.row#header-tab": {
     "children": [
       "rich-text#freight-text",
-      "flex-layout.row#option-link"
+      "rich-text#option-link"
     ],
     "props": {
       "margin": 0,
@@ -31,48 +31,12 @@
       "blockClass": "textHeaderTab"
     }
   },
-  "flex-layout.row#option-link": {
-    "children": [
-      "flex-layout.col#revendor",
-      "rich-text#bar",
-      "flex-layout.col#representative"
-    ],
+  "rich-text#option-link": {
     "props": {
-      "rowGap": 120
-    }
-  },
-  "flex-layout.col#revendor": {
-    "children": [
-      "rich-text#revendor"
-    ]
-  },
-  "rich-text#revendor": {
-    "props": {
-      "text": "SEJA UM REVENDEDOR",
+      "text": "[SEJA UM REVENDEDOR](https://developers.vtex.com/vtex-developer-docs/docs/vtex-menu) | [SEJA UM REPRESENTANTE](https://developers.vtex.com/vtex-developer-docs/docs/vtex-menu)",
       "blockClass": "textHeaderTab",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-  "rich-text#bar": {
-    "props": {
-      "text": "|",
-      "blockClass": "bar",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-  "flex-layout.col#representative": {
-    "children": [
-      "rich-text#representative"
-    ]
-  },
-  "rich-text#representative": {
-    "props": {
-      "text": "SEJA UM REPRESENTANTE",
-      "blockClass": "textHeaderTab",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "textPosition": "RIGHT"
     }
   },
   "flex-layout.row#header-bar": {
