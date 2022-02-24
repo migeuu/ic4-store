@@ -1,9 +1,32 @@
 .menuContainer--allDepartment {
   background-color: #441afa;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+}
+
+.menuContainer--itemDepartmentMenu {
+  margin-left: 20px;
+}
+
+.menuContainerNav--submenuDep {
+  transition: 300ms ease;
+}
+
+.submenuWrapper {
+  padding: 0;
+  border: none;
+}
+
+.menuContainerNav--submenuDep:hover {
+  background-color: #eeeeee;
+}
+
+.menuItem--department--isOpen :first-child {
+  color: #441afa;
+  font-weight: bold;
+}
+
+.submenuWrapper--submenuCategory--isOpen :first-child {
+  font-weight: normal;
+  color: #000;
 }
 
 .styledLinkContent--allDepartmentItem {
@@ -24,47 +47,90 @@
   background-image: url("https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/menu-branco___d782ee8899a81fa256d85766cd68e76d.png");
 }
 
-.styledLinkContainer--departament {
-  padding: 15px 0 15px 0;
-  padding-right: 160px;
+.styledLinkContent--itemDepartment {
+  padding-left: 20px;
+  color: #000;
+  font-size: 13px;
 }
 
-.styledLinkContent--departament {
-  font-size: 14px;
+.styledLinkContainer--department {
+  padding: 20px 0 15px 0;
+  width: 263px;
+}
+
+.styledLinkContainer--seeAll {
+  padding: 10px 0 150px 0;
+  width: 263px;
+}
+
+.styledLinkContent--seeAll {
+  color: black;
+  text-decoration: 1px solid underline;
+  font-weight: bold;
 }
 
 .styledLinkContainer--categoryAllDep {
   padding: 15px 0 15px 0;
-  padding-right: 192px;
+  width: 263px;
+}
+
+.menuItem--categoryAllDep:hover {
+  background-color: #eee;
+}
+
+.menuItem--categoryAllDep--isOpen :first-child {
+  color: #441afa;
+  font-weight: bold;
+}
+
+.styledLinkContent--categoryAllDep:hover {
+  color: #441afa;
+  font-weight: bold;
+}
+
+.styledLinkContainer--titleDepartment {
+  padding: 25px 0 15px 0;
+  width: 263px;
 }
 
 .styledLinkContent--categoryAllDep {
   font-size: 14px;
 }
 
+.styledLink--categoryAllDep--isOpen :first-child {
+  font-weight: bold;
+}
+
 .submenuContainer--submenuCategory {
-  position: relative;
-  left: 314px;
-  top: -58px;
+  position: absolute;
+  left: 312px;
+  top: 0px;
 }
 
 .submenuContainer--submenuSubCategory {
-  position: relative;
-  left: 316px;
-  top: -58px;
-}
-
-.submenuContainer--submenuSubCategory2 {
-  position: relative;
-  left: 316px;
-  top: -104px;
+  position: absolute;
+  left: 312px;
+  top: 0px;
 }
 
 .styledLinkContainer--subCategoryItem {
-  padding: 15px 0 15px 0;
-  padding-right: 192px;
+  padding: 15px 0 16px 0;
+  width: 263px;
 }
 
-.styledLinkContent--subCategoryItem {
+.styledLink--subCategoryItem :first-child {
   font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+
+.styledLink--titleDepartment :first-child {
+  color: #441afa;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.styledLink--seeAll :first-child {
+  color: #000;
+  font-weight: bold;
 }

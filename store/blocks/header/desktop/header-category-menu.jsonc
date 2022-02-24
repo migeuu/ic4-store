@@ -10,10 +10,10 @@
   "flex-layout.row#menu-container": {
     "children": [
       "vtex.menu@2.x:menu#all-dep",
-      "menu-item#item-dep1"
-      // "menu-item#item-dep2",
-      // "menu-item#item-news",
-      // "menu-item#item-outlet"
+      "vtex.menu@2.x:menu#item-dep1",
+      "menu-item#item-dep2",
+      "menu-item#item-news",
+      "menu-item#item-outlet"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -59,6 +59,7 @@
       "vtex.menu@2.x:menu#dep2"
     ]
   },
+  // MENU DOS DEPARTAMENTOS
   "vtex.menu@2.x:menu#dep1": {
     "props": {
       "blockClass": "submenuDep"
@@ -75,13 +76,21 @@
       "menu-item#dep2"
     ]
   },
+  // MENU DOS DEPARTAMENTOS
+  // DEPARTAMENTO 1 (TODOS OS DEP.) //
   "menu-item#dep1": {
     "props": {
       "id": "menu-item-dep1",
       "type": "custom",
       "highlight": false,
-      "blockClass": "departament",
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 14,
+        "activeClassName": "black"
+      },
+      "blockClass": "department",
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,
@@ -99,17 +108,40 @@
       "orientation": "vertical"
     },
     "children": [
+      "menu-item#title-department1",
       "menu-item#category-1",
-      "menu-item#category-2"
+      "menu-item#category-2",
+      "menu-item#see-all-dep1"
     ]
+  },
+  "menu-item#title-department1": {
+    "props": {
+      "id": "menu-item-title-department1",
+      "blockClass": "titleDepartment",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Titulo departamento 1",
+        "text": "Departamento 1"
+      }
+    }
   },
   "menu-item#category-1": {
     "props": {
       "id": "menu-item-category-1",
       "blockClass": "categoryAllDep",
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 14,
+        "activeClassName": "black"
+      },
       "type": "custom",
       "highlight": false,
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,
@@ -127,9 +159,26 @@
       "orientation": "vertical"
     },
     "children": [
+      "menu-item#title-category1",
       "menu-item#sub-category-1",
-      "menu-item#sub-category-2"
+      "menu-item#sub-category-2",
+      "menu-item#see-all-cat1"
     ]
+  },
+  "menu-item#title-category1": {
+    "props": {
+      "id": "menu-item-title-category1",
+      "blockClass": "titleDepartment",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Titulo categoria 1",
+        "text": "Categoria 1"
+      }
+    }
   },
   "menu-item#sub-category-1": {
     "props": {
@@ -167,7 +216,13 @@
       "blockClass": "categoryAllDep",
       "type": "custom",
       "highlight": false,
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 14,
+        "activeClassName": "black"
+      },
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,
@@ -181,17 +236,35 @@
   },
   "vtex.menu@2.x:submenu#sub-category-2": {
     "props": {
-      "blockClass": "submenuSubCategory2",
+      "blockClass": "submenuSubCategory",
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#sub2-category-1",
-      "menu-item#sub2-category-2"
+      "menu-item#title-category2",
+      "menu-item#sub2-category-3",
+      "menu-item#sub2-category-4",
+      "menu-item#see-all-cat2"
     ]
   },
-  "menu-item#sub2-category-1": {
+  "menu-item#title-category2": {
     "props": {
-      "id": "menu-item-sub2-category-1",
+      "id": "menu-item-title-category2",
+      "blockClass": "titleDepartment",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Titulo categoria 2",
+        "text": "Categoria 2"
+      }
+    }
+  },
+  "menu-item#sub2-category-3": {
+    "props": {
+      "blockClass": "subCategoryItem",
+      "id": "menu-item-sub2-category-3",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -203,9 +276,10 @@
       }
     }
   },
-  "menu-item#sub2-category-2": {
+  "menu-item#sub2-category-4": {
     "props": {
-      "id": "menu-item-sub2-category-2",
+      "blockClass": "subCategoryItem",
+      "id": "menu-item-sub2-category-4",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -217,13 +291,113 @@
       }
     }
   },
+  // DEPARTAMENTO 1 (TODOS OS DEP.) //
+  // ITENS DE VER TODOS //
+  "menu-item#see-all-dep1": {
+    "props": {
+      "id": "menu-item-see-all-dep1",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "seeAll",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver todos departamento 1",
+        "text": "Ver todos"
+      }
+    }
+  },
+  "menu-item#see-all-cat1": {
+    "props": {
+      "id": "menu-item-see-all-cat1",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "seeAll",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver todos categoria 1",
+        "text": "Ver todos"
+      }
+    }
+  },
+  "menu-item#see-all-cat2": {
+    "props": {
+      "id": "menu-item-see-all-cat2",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "seeAll",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver todos categoria 2",
+        "text": "Ver todos"
+      }
+    }
+  },
+  "menu-item#see-all-dep2": {
+    "props": {
+      "id": "menu-item-see-all-dep2",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "seeAll",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver todos Departamento 2",
+        "text": "Ver todos"
+      }
+    }
+  },
+  "menu-item#see-all-cat3": {
+    "props": {
+      "id": "menu-item-see-all-cat3",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "seeAll",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver todos categoria 3",
+        "text": "Ver todos"
+      }
+    }
+  },
+  "menu-item#see-all-cat4": {
+    "props": {
+      "id": "menu-item-see-all-cat4",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "seeAll",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver todos categoria 4",
+        "text": "Ver todos"
+      }
+    }
+  },
+  // ITENS DE VER TODOS //
+  // DEPARTAMENTO 2 (TODOS OS DEP.) //
   "menu-item#dep2": {
     "props": {
       "id": "menu-item-dep2",
       "type": "custom",
       "highlight": false,
-      "blockClass": "departament",
+      "blockClass": "department",
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 14,
+        "activeClassName": "black"
+      },
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,
@@ -241,21 +415,45 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#dep2-category-1",
-      "menu-item#dep2-category-2"
+      "menu-item#title-department2",
+      "menu-item#dep2-category-3",
+      "menu-item#dep2-category-4",
+      "menu-item#see-all-dep2"
     ]
   },
-  "menu-item#dep2-category-1": {
+  "menu-item#title-department2": {
     "props": {
-      "id": "menu-item-dep2-category-1",
+      "id": "menu-item-title-department2",
+      "blockClass": "titleDepartment",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Categoria 1",
-        "text": "Categoria 1"
+        "tagTitle": "Titulo departamento 2",
+        "text": "Departamento 2"
+      }
+    }
+  },
+  "menu-item#dep2-category-3": {
+    "props": {
+      "blockClass": "categoryAllDep",
+      "id": "menu-item-dep2-category-3",
+      "type": "custom",
+      "highlight": false,
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 14,
+        "activeClassName": "black"
+      },
+      "itemProps": {
+        "iconPosition": "right",
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Categoria 3",
+        "text": "Categoria 3"
       }
     },
     "blocks": [
@@ -268,49 +466,75 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#dep2-sub-category-1",
-      "menu-item#dep2-sub-category-2"
+      "menu-item#title-category3",
+      "menu-item#dep2-sub-category-5",
+      "menu-item#dep2-sub-category-6",
+      "menu-item#see-all-cat3"
     ]
   },
-  "menu-item#dep2-sub-category-1": {
+  "menu-item#title-category3": {
     "props": {
-      "id": "menu-item-category-1",
+      "id": "menu-item-title-category3",
+      "blockClass": "titleDepartment",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sub-categoria 1",
-        "text": "Sub-categoria 1"
+        "tagTitle": "Titulo categoria 3",
+        "text": "Categoria 3"
       }
     }
   },
-  "menu-item#dep2-sub-category-2": {
+  "menu-item#dep2-sub-category-5": {
     "props": {
-      "id": "menu-item-category-2",
+      "blockClass": "subCategoryItem",
+      "id": "menu-item-category-6",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sub-categoria 2",
-        "text": "Sub-categoria 2"
+        "tagTitle": "Sub-categoria 5",
+        "text": "Sub-categoria 5"
       }
     }
   },
-  "menu-item#dep2-category-2": {
+  "menu-item#dep2-sub-category-6": {
     "props": {
-      "id": "menu-item-dep2-category-2",
+      "blockClass": "subCategoryItem",
+      "id": "menu-item-category-6",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Categoria 2",
-        "text": "Categoria 2"
+        "tagTitle": "Sub-categoria 6",
+        "text": "Sub-categoria 6"
+      }
+    }
+  },
+  "menu-item#dep2-category-4": {
+    "props": {
+      "blockClass": "categoryAllDep",
+      "id": "menu-item-dep2-category-4",
+      "type": "custom",
+      "highlight": false,
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 14,
+        "activeClassName": "black"
+      },
+      "itemProps": {
+        "iconPosition": "right",
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Categoria 4",
+        "text": "Categoria 4"
       }
     },
     "blocks": [
@@ -323,91 +547,147 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#dep2-sub2-category-1",
-      "menu-item#dep2-sub2-category-2"
+      "menu-item#title-category4",
+      "menu-item#dep2-sub2-category-7",
+      "menu-item#dep2-sub2-category-8"
     ]
   },
-  "menu-item#dep2-sub2-category-1": {
+  "menu-item#title-category4": {
     "props": {
-      "id": "menu-item-dep2-sub2-category-1",
+      "id": "menu-item-title-category4",
+      "blockClass": "titleDepartment",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sub-categoria 3",
-        "text": "Sub-categoria 3"
+        "tagTitle": "Titulo categoria 4",
+        "text": "Categoria 4"
       }
     }
   },
-  "menu-item#dep2-sub2-category-2": {
+  "menu-item#dep2-sub2-category-7": {
     "props": {
-      "id": "menu-item-sub2-category-2",
+      "blockClass": "subCategoryItem",
+      "id": "menu-item-dep2-sub2-category-7",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sub-categoria 4",
-        "text": "Sub-categoria 290"
+        "tagTitle": "Sub-categoria 7",
+        "text": "Sub-categoria 7"
       }
     }
+  },
+  "menu-item#dep2-sub2-category-8": {
+    "props": {
+      "blockClass": "subCategoryItem",
+      "id": "menu-item-sub2-category-8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sub-categoria 8",
+        "text": "Sub-categoria 8"
+      }
+    }
+  },
+  // DEPARTAMENTO 2 (TODOS OS DEP.) //
+  // ALL DEPARTMENTS //
+  // DEPARTAMENTO 1 NAVBAR//
+  "vtex.menu@2.x:menu#item-dep1": {
+    "props": {
+      "blockClass": "itemDepartmentMenu"
+    },
+    "children": [
+      "menu-item#item-dep1"
+    ]
   },
   "menu-item#item-dep1": {
     "props": {
-      "id": "department1",
-      "blockClass": "department1",
+      "blockClass": "itemDepartment",
+      "id": "dep1",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Departamento 1",
+        "tagTitle": "Departamento 1 Navbar",
         "text": "DEPARTAMENTO 1"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#item-department-category"
-    ]
-  },
-  "vtex.menu@2.x:submenu#item-department-category": {
-    "props": {
-      "blockClass": "itemDepartmentSubmenu",
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category1-department1",
-      "menu-item#category2-department1"
-    ]
-  },
-  "menu-item#category1-department1": {
-    "props": {
-      "id": "category-1-department-1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Categoria 1",
-        "text": "Categoria 1"
       }
     }
   },
-  "menu-item#category2-department1": {
+  // "vtex.menu@2.x:submenu#item-department-category": {
+  //   "props": {
+  //     "blockClass": "itemDepartmentSubmenu",
+  //     "orientation": "vertical"
+  //   },
+  //   "children": [
+  //     "menu-item#category1-department1",
+  //     "menu-item#category2-department1"
+  //   ]
+  // },
+  // "menu-item#category1-department1": {
+  //   "props": {
+  //     "id": "category-1-department-1",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Categoria 1",
+  //       "text": "Categoria 1"
+  //     }
+  //   }
+  // },
+  // "menu-item#category2-department1": {
+  //   "props": {
+  //     "id": "category-2-department-1",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Categoria 2",
+  //       "text": "Categoria 2"
+  //     }
+  //   }
+  // }
+  "menu-item#item-dep2": {
     "props": {
-      "id": "category-2-department-1",
+      "blockClass": "itemDepartment",
+      "id": "dep2",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Categoria 2",
-        "text": "Categoria 2"
+        "tagTitle": "Departamento 2 Navbar",
+        "text": "DEPARTAMENTO 2"
+      }
+    }
+  },
+  "menu-item#news": {
+    "props": {
+      "blockClass": "news",
+      "id": "dep2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Departamento 2 Navbar",
+        "text": "DEPARTAMENTO 2"
       }
     }
   }
