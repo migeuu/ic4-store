@@ -1,0 +1,15 @@
+{
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#top-menu-mobile"
+    ]
+  },
+  "flex-layout.row#top-menu-mobile": {
+    "props": {
+      "blockClass": "topMenu"
+    },
+    "children": [
+      "rich-text#freight-text"
+    ]
+  }
+}

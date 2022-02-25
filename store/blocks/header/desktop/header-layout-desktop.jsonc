@@ -2,8 +2,7 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#top-menu",
-      "flex-layout.row#header-bar",
-      "flex-layout.row#menu-wrapper"
+      "sticky-layout#header"
     ]
   },
   "flex-layout.row#top-menu": {
@@ -38,6 +37,15 @@
       "textAlignment": "CENTER",
       "textPosition": "RIGHT"
     }
+  },
+  "sticky-layout#header": {
+    "props": {
+      "position": "top"
+    },
+    "children": [
+      "flex-layout.row#header-bar",
+      "flex-layout.row#menu-wrapper"
+    ]
   },
   "flex-layout.row#header-bar": {
     "props": {
@@ -88,7 +96,8 @@
   "link#client-support": {
     "props": {
       "href": "#",
-      "label": "Atendimento ao Cliente"
+      "label": "Atendimento ao Cliente",
+      "blockClass": "clientSupport"
     }
   },
   "login#login-component": {

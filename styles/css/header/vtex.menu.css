@@ -48,7 +48,8 @@
 }
 
 .styledLinkContent--itemDepartment {
-  padding-left: 20px;
+  letter-spacing: 1px;
+  padding: 0 20px 0 20px;
   color: #000;
   font-size: 13px;
 }
@@ -133,4 +134,26 @@
 .styledLink--seeAll :first-child {
   color: #000;
   font-weight: bold;
+}
+
+.menuItem--subCategoryItem:hover {
+  background-color: #eee;
+}
+
+.styledLinkContent--subCategoryItem:hover {
+  color: #441afa;
+  font-weight: bold;
+}
+
+.styledLinkContent--news {
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.styledLinkContent--outlet {
+  color: #441afa;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 13px;
 }

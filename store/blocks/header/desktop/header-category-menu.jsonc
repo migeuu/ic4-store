@@ -676,18 +676,33 @@
       }
     }
   },
-  "menu-item#news": {
+  "menu-item#item-news": {
     "props": {
       "blockClass": "news",
-      "id": "dep2",
+      "id": "novidades",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Departamento 2 Navbar",
-        "text": "DEPARTAMENTO 2"
+        "tagTitle": "Novidades",
+        "text": "NOVIDADES"
+      }
+    }
+  },
+  "menu-item#item-outlet": {
+    "props": {
+      "blockClass": "outlet",
+      "id": "outlet",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Outlet",
+        "text": "OUTLET"
       }
     }
   }

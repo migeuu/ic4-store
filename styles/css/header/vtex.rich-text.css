@@ -1,14 +1,25 @@
-.container--textHeaderTab {
-  color: white;
-  font-size: 12px;
+@media (min-width: 1024px) {
+  .container--textHeaderTab {
+    color: white;
+    font-size: 12px;
+  }
+
+  .link--textHeaderTab {
+    color: white;
+    text-decoration: none;
+  }
+
+  .container--titleSubmenu {
+    padding-left: 1rem;
+    color: #441afa;
+  }
 }
 
-.link--textHeaderTab {
-  color: white;
-  text-decoration: none;
-}
-
-.container--titleSubmenu {
-  padding-left: 1rem;
-  color: #441afa;
+@media (max-width: 640px) {
+  .container--textHeaderTab {
+    padding: 0;
+    background-color: #25282a;
+    color: white;
+    font-size: 10px;
+  }
 }
