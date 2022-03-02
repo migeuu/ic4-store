@@ -1,159 +1,214 @@
-.menuContainer--allDepartment {
-  background-color: #441afa;
+@media (min-width: 1024px) {
+  .menuContainer--allDepartment {
+    background-color: #441afa;
+  }
+
+  .menuContainer--itemDepartmentMenu {
+    margin-left: 20px;
+  }
+
+  .menuContainerNav--submenuDep {
+    transition: 300ms ease;
+  }
+
+  .submenuWrapper {
+    padding: 0;
+    border: none;
+  }
+
+  .menuContainerNav--submenuDep:hover {
+    background-color: #eeeeee;
+  }
+
+  .menuItem--department--isOpen :first-child {
+    color: #441afa;
+    font-weight: bold;
+  }
+
+  .submenuWrapper--submenuCategory--isOpen :first-child {
+    font-weight: normal;
+    color: #000;
+  }
+
+  .styledLinkContent--allDepartmentItem {
+    padding-left: 30px;
+    padding-right: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .styledLink--allDepartmentItem
+    :global(.vtex-menu-2-x-styledLinkContent)::before {
+    content: "";
+    position: relative;
+    right: 14px;
+    width: 20px;
+    height: 14px;
+    background-image: url("https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/menu-branco___d782ee8899a81fa256d85766cd68e76d.png");
+  }
+
+  .styledLinkContent--itemDepartment {
+    letter-spacing: 1px;
+    padding: 0 20px 0 20px;
+    color: #000;
+    font-size: 13px;
+  }
+
+  .styledLinkContainer--department {
+    padding: 20px 0 15px 0;
+    width: 263px;
+  }
+
+  .styledLinkContainer--seeAll {
+    padding: 10px 0 150px 0;
+    width: 263px;
+  }
+
+  .styledLinkContent--seeAll {
+    color: black;
+    text-decoration: 1px solid underline;
+    font-weight: bold;
+  }
+
+  .styledLinkContainer--categoryAllDep {
+    padding: 15px 0 15px 0;
+    width: 263px;
+  }
+
+  .menuItem--categoryAllDep:hover {
+    background-color: #eee;
+  }
+
+  .menuItem--categoryAllDep--isOpen :first-child {
+    color: #441afa;
+    font-weight: bold;
+  }
+
+  .styledLinkContent--categoryAllDep:hover {
+    color: #441afa;
+    font-weight: bold;
+  }
+
+  .styledLinkContainer--titleDepartment {
+    padding: 25px 0 15px 0;
+    width: 263px;
+  }
+
+  .styledLinkContent--categoryAllDep {
+    font-size: 14px;
+  }
+
+  .styledLink--categoryAllDep--isOpen :first-child {
+    font-weight: bold;
+  }
+
+  .submenuContainer--submenuCategory {
+    position: absolute;
+    left: 312px;
+    top: 0px;
+  }
+
+  .submenuContainer--submenuSubCategory {
+    position: absolute;
+    left: 312px;
+    top: 0px;
+  }
+
+  .styledLinkContainer--subCategoryItem {
+    padding: 15px 0 16px 0;
+    width: 263px;
+  }
+
+  .styledLink--subCategoryItem :first-child {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+  }
+
+  .styledLink--titleDepartment :first-child {
+    color: #441afa;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .styledLink--seeAll :first-child {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .menuItem--subCategoryItem:hover {
+    background-color: #eee;
+  }
+
+  .styledLinkContent--subCategoryItem:hover {
+    color: #441afa;
+    font-weight: bold;
+  }
 }
 
-.menuContainer--itemDepartmentMenu {
-  margin-left: 20px;
-}
-
-.menuContainerNav--submenuDep {
-  transition: 300ms ease;
-}
-
-.submenuWrapper {
-  padding: 0;
-  border: none;
-}
-
-.menuContainerNav--submenuDep:hover {
-  background-color: #eeeeee;
-}
-
-.menuItem--department--isOpen :first-child {
-  color: #441afa;
+.styledLinkContent--primaryItem {
   font-weight: bold;
-}
-
-.submenuWrapper--submenuCategory--isOpen :first-child {
-  font-weight: normal;
-  color: #000;
-}
-
-.styledLinkContent--allDepartmentItem {
-  padding-left: 30px;
-  padding-right: 10px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.styledLink--allDepartmentItem
-  :global(.vtex-menu-2-x-styledLinkContent)::before {
-  content: "";
-  position: relative;
-  right: 14px;
-  width: 20px;
-  height: 14px;
-  background-image: url("https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/menu-branco___d782ee8899a81fa256d85766cd68e76d.png");
-}
-
-.styledLinkContent--itemDepartment {
+  font-size: 13px;
   letter-spacing: 1px;
-  padding: 0 20px 0 20px;
-  color: #000;
+}
+
+.styledLinkContent--secondaryItem {
+  color: #441afa;
+  letter-spacing: 1px;
+  font-weight: bold;
   font-size: 13px;
 }
 
-.styledLinkContainer--department {
-  padding: 20px 0 15px 0;
-  width: 263px;
-}
-
-.styledLinkContainer--seeAll {
-  padding: 10px 0 150px 0;
-  width: 263px;
-}
-
-.styledLinkContent--seeAll {
-  color: black;
-  text-decoration: 1px solid underline;
-  font-weight: bold;
-}
-
-.styledLinkContainer--categoryAllDep {
-  padding: 15px 0 15px 0;
-  width: 263px;
-}
-
-.menuItem--categoryAllDep:hover {
+.menuItem--thirdiaryItem {
   background-color: #eee;
 }
 
-.menuItem--categoryAllDep--isOpen :first-child {
-  color: #441afa;
-  font-weight: bold;
-}
-
-.styledLinkContent--categoryAllDep:hover {
-  color: #441afa;
-  font-weight: bold;
-}
-
-.styledLinkContainer--titleDepartment {
-  padding: 25px 0 15px 0;
-  width: 263px;
-}
-
-.styledLinkContent--categoryAllDep {
-  font-size: 14px;
-}
-
-.styledLink--categoryAllDep--isOpen :first-child {
-  font-weight: bold;
-}
-
-.submenuContainer--submenuCategory {
-  position: absolute;
-  left: 312px;
-  top: 0px;
-}
-
-.submenuContainer--submenuSubCategory {
-  position: absolute;
-  left: 312px;
-  top: 0px;
-}
-
-.styledLinkContainer--subCategoryItem {
-  padding: 15px 0 16px 0;
-  width: 263px;
-}
-
-.styledLink--subCategoryItem :first-child {
-  font-size: 14px;
+.styledLinkContent--thirdiaryItem {
   color: #000;
-  font-weight: normal;
-}
-
-.styledLink--titleDepartment :first-child {
-  color: #441afa;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.styledLink--seeAll :first-child {
-  color: #000;
-  font-weight: bold;
-}
-
-.menuItem--subCategoryItem:hover {
-  background-color: #eee;
-}
-
-.styledLinkContent--subCategoryItem:hover {
-  color: #441afa;
-  font-weight: bold;
-}
-
-.styledLinkContent--news {
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-.styledLinkContent--outlet {
-  color: #441afa;
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .styledLinkContainer {
+    margin-left: 1rem;
+  }
+
+  .menuContainerNav--menuMobile {
+    width: 100%;
+  }
+
+  :global(.vtex-menu-2-x-accordionIcon) {
+    display: none;
+  }
+
+  .menuItem--news,
+  .menuItem--outlet,
+  .menuItem--departmentMobile {
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .menuContainer--menuMobile .menuItem {
+    padding: 10px 0;
+  }
+
+  .menuContainer--menuMobile .styledLinkContent {
+    font-size: 13px;
+  }
+
+  .menuItem--departmentMobile--isOpen .styledLinkContent--departmentMobile {
+    color: #441afa;
+    font-weight: bold;
+  }
+
+  .menuItem--subCategoryMob .styledLinkContent--subCategoryMob {
+    text-transform: uppercase;
+  }
+
+  .menuItem--subCategoryMob--isOpen .styledLinkContent--subCategoryMob {
+    color: #441afa;
+    font-weight: bold;
+  }
 }

@@ -1,0 +1,58 @@
+{
+  "menu-item#sub-category-1-mob": {
+    "props": {
+      "id": "menu-item-category-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sub-categoria 1",
+        "text": "Sub-categoria 1"
+      }
+    }
+  },
+  "menu-item#sub-category-2-mob": {
+    "props": {
+      "id": "menu-item-category-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sub-categoria 2",
+        "text": "Sub-categoria 2"
+      }
+    }
+  },
+  "menu-item#sub-category-3-mob": {
+    "props": {
+      "id": "menu-item-category-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sub-categoria 3",
+        "text": "Sub-categoria 3"
+      }
+    }
+  },
+  "menu-item#sub-category-4-mob": {
+    "props": {
+      "id": "menu-item-category-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sub-categoria 4",
+        "text": "Sub-categoria 4"
+      }
+    }
+  }
+}

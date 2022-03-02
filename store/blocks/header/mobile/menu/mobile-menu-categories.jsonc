@@ -1,0 +1,70 @@
+{
+  // CATEGORIA 1
+  "menu-item#category-1-mob": {
+    "props": {
+      "id": "category-1-mob",
+      "blockClass": "subCategoryMob",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Categoria 1",
+        "text": "Categoria 1"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#sub-category-1"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#sub-category-1": {
+    "props": {
+      "blockClass": "subCategoryMob",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#sub-category-1-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#sub-category-1-accordion": {
+    "children": [
+      "menu-item#sub-category-1-mob",
+      "menu-item#sub-category-2-mob"
+    ]
+  },
+  // CATEGORIA 2
+  "menu-item#category-2-mob": {
+    "props": {
+      "id": "category-2-mob",
+      "blockClass": "subCategoryMob",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Categoria 2",
+        "text": "Categoria 2"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#sub-category-2"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#sub-category-2": {
+    "props": {
+      "blockClass": "subCategoryMob",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#sub-category-2-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#sub-category-2-accordion": {
+    "children": [
+      "menu-item#sub-category-3-mob",
+      "menu-item#sub-category-4-mob"
+    ]
+  }
+}

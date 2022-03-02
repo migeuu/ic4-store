@@ -678,7 +678,7 @@
   },
   "menu-item#item-news": {
     "props": {
-      "blockClass": "news",
+      "blockClass": "primaryItem",
       "id": "novidades",
       "type": "custom",
       "highlight": false,

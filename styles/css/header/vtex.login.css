@@ -1,0 +1,29 @@
+:global(.vtex-login-2-x-buttonSocial) {
+  display: none;
+}
+
+:global(.vtex-login-2-x-formTitle) {
+  padding: 10px 0 10px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+:global(.vtex-login-2-x-button) :global(.vtex-button) {
+  border: 1px solid #b1b3b3;
+  padding: 20px 0 20px 0;
+  background-color: #fff;
+}
+
+.accessCodeOptionBtn :global(.vtex-button__label) {
+  font-size: 14px;
+  color: #441afa;
+  text-transform: initial;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button__label) {
+  font-size: 14px;
+  color: #441afa;
+  text-transform: initial;
+}

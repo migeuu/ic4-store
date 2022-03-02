@@ -1,0 +1,201 @@
+{
+  // MENU MOBILE DRAWER 
+  "vtex.menu@2.x:menu#menu-mobile": {
+    "props": {
+      "blockClass": "menuMobile",
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news-mob",
+      "menu-item#outlet-mob",
+      "menu-item#dep1-mob",
+      "menu-item#dep2-mob",
+      "menu-item#my-account",
+      "menu-item#client-support",
+      "menu-item#store-partners",
+      "menu-item#representative",
+      "menu-item#revendor"
+    ]
+  },
+  // NOVIDADES
+  "menu-item#news-mob": {
+    "props": {
+      "id": "news-mob",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "primaryItem",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Novidades",
+        "text": "NOVIDADES"
+      }
+    }
+  },
+  // OUTLET
+  "menu-item#outlet-mob": {
+    "props": {
+      "id": "outlet-mob",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "secondaryItem",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Outlet",
+        "text": "OUTLET"
+      }
+    }
+  },
+  // DEPARTAMENTO 1
+  "menu-item#dep1-mob": {
+    "props": {
+      "id": "dep1-mob",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "departmentMobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Departamento 1",
+        "text": "DEPARTAMENTO 1"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#category-mob"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#category-mob": {
+    "props": {
+      "blockClass": "submenuCategoryMobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-mob-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-mob-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-1-mob",
+      "menu-item#category-2-mob"
+    ]
+  },
+  // DEPARTAMENTO 2
+  "menu-item#dep2-mob": {
+    "props": {
+      "id": "dep2-mob",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "departmentMobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Departamento 2",
+        "text": "DEPARTAMENTO 2"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#category-mob"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#category-2-mob": {
+    "props": {
+      "blockClass": "submenuCategoryMobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-2-mob-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-2-mob-accordion": {
+    "children": [
+      "menu-item#category-1-mob",
+      "menu-item#category-1-mob"
+    ]
+  },
+  // MINHA CONTA
+  "menu-item#my-account": {
+    "props": {
+      "id": "my-account",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "secondaryItem",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Minha Conta",
+        "text": "MINHA CONTA"
+      }
+    }
+  },
+  // ATENDIMENTO AO CLIENTE
+  "menu-item#client-support": {
+    "props": {
+      "id": "client-support",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "secondaryItem",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Atendimento ao Cliente",
+        "text": "ATENDIMENTO AO CLIENTE"
+      }
+    }
+  },
+  // LOJAS PARCEIRAS
+  "menu-item#store-partners": {
+    "props": {
+      "id": "store-partners",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "thirdiaryItem",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Lojas Parceiras",
+        "text": "LOJAS PARCEIRAS"
+      }
+    }
+  },
+  // SEJA UM REPRESENTANTE
+  "menu-item#representative": {
+    "props": {
+      "id": "representative",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "thirdiaryItem",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Seja um representante",
+        "text": "SEJA UM REPRESENTANTE"
+      }
+    }
+  },
+  // SEJA UM REVENDEDOR
+  "menu-item#revendor": {
+    "props": {
+      "id": "revendor",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "thirdiaryItem",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Seja um revendedor",
+        "text": "SEJA UM REVENDEDOR"
+      }
+    }
+  }
+}

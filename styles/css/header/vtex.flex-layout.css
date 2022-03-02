@@ -89,4 +89,16 @@
     margin: 0;
     background-color: #25282a;
   }
+
+  .flexRow--headerBarMobile {
+    background-color: #eeeeee;
+    padding: 15px 0 15px 0;
+  }
+
+  .flexRowContent--headerBarMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
