@@ -1,0 +1,33 @@
+{
+  "responsive-layout.mobile#home": {
+    "children": [
+      "slider-layout#main-banner",
+      "flex-layout.row#deals",
+      "flex-layout.row#department-slider"
+    ]
+  },
+  // SLIDER IMAGENS
+  "slider-layout#main-banner": {
+    "children": [
+      "image#main-image",
+      "image#secondary-image"
+    ],
+    "props": {
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "sliderHome"
+    }
+  },
+  "image#main-image": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/shopnow___5a68202d2d18570657c20bdef7d389a5.png"
+    }
+  },
+  "image#secondary-image": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/shopnow___5a68202d2d18570657c20bdef7d389a5.png"
+    }
+  }
+  // SLIDER IMAGENS
+}

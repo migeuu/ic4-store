@@ -41,8 +41,19 @@
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #a7afbd;
-  padding: 14px 0px;
+  background-color: #eee;
+  padding: 10px 0px;
+}
+
+.flexCol--dealsContent {
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexColChild--dealsContent {
+  display: flex;
+  align-items: center;
 }
 
 .flexRow--deals .stretchChildrenWidth {

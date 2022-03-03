@@ -1,0 +1,39 @@
+{
+  // DEPARTAMENTO 1
+  "flex-layout.col#department-item1": {
+    "children": [
+      "image#dep-item1",
+      "rich-text#dep-item1"
+    ],
+    "props": {}
+  },
+  "image#dep-item1": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/clothes___c3a9e2e14650448ec2511a871e1b8568.png"
+    }
+  },
+  "rich-text#dep-item1": {
+    "props": {
+      "text": "DEPARTAMENTO 1",
+      "blockClass": "departmentItemTitle"
+    }
+  },
+  // DEPARTAMENTO 2
+  "flex-layout.col#department-item2": {
+    "children": [
+      "image#dep-item1",
+      "rich-text#dep-item1"
+    ],
+    "props": {}
+  },
+  "image#dep-item2": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/clothes___c3a9e2e14650448ec2511a871e1b8568.png"
+    }
+  },
+  "rich-text#dep-item2": {
+    "props": {
+      "text": "DEPARTAMENTO 2"
+    }
+  }
+}

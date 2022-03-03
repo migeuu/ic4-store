@@ -59,6 +59,7 @@
 
   .flexRow--menuWrapper {
     background-color: #eeeeee;
+    border-top: 1px solid #d9d9d9;
   }
 
   .flexRow--menuContainer {
@@ -80,6 +81,37 @@
   }
 }
 
+:global(.vtex-button):hover {
+  background: none;
+}
+
+:global(.vtex-login-2-x-container) {
+  background: url(https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/user___f311137….png)
+    no-repeat center;
+}
+
+:global(.vtex-login-2-x-container) :global(.vtex-login-2-x-profileIcon) {
+  display: none;
+}
+
+:global(.vtex-minicart-2-x-cartIcon) {
+  display: none;
+}
+
+:global(.vtex-minicart-2-x-minicartIconContainer) {
+  height: 26px;
+  width: 28px;
+  background-image: url("https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/Grupo4794___5f9e35f….png");
+}
+
+:global(.vtex-minicart-2-x-minicartIconContainer) :global(.vtex-button__label) {
+  padding-left: 0;
+}
+
+:global(.vtex-minicart-2-x-minicartQuantityBadge) {
+  background-color: #441afa;
+}
+
 @media (max-width: 640px) {
   .flexRow--topMenu {
     display: flex;
@@ -92,10 +124,11 @@
 
   .flexRow--headerBarMobile {
     background-color: #eeeeee;
-    padding: 15px 0 15px 0;
+    padding: 15px 0 5px 0;
   }
 
   .flexRowContent--headerBarMobile {
+    padding: 0 10px 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

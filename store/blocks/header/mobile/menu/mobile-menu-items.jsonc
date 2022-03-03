@@ -56,7 +56,13 @@
       "type": "custom",
       "highlight": false,
       "blockClass": "departmentMobile",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 14,
+        "activeClassName": "black"
+      },
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,
@@ -92,7 +98,13 @@
       "type": "custom",
       "highlight": false,
       "blockClass": "departmentMobile",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 14,
+        "activeClassName": "black"
+      },
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,

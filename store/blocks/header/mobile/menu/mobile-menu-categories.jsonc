@@ -6,7 +6,13 @@
       "blockClass": "subCategoryMob",
       "type": "custom",
       "highlight": false,
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 14,
+        "activeClassName": "black"
+      },
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,
@@ -28,6 +34,9 @@
     ]
   },
   "vtex.menu@2.x:menu#sub-category-1-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
     "children": [
       "menu-item#sub-category-1-mob",
       "menu-item#sub-category-2-mob"
@@ -40,7 +49,13 @@
       "blockClass": "subCategoryMob",
       "type": "custom",
       "highlight": false,
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 14,
+        "activeClassName": "black"
+      },
       "itemProps": {
+        "iconPosition": "right",
         "type": "internal",
         "href": "#",
         "noFollow": false,
@@ -62,6 +77,9 @@
     ]
   },
   "vtex.menu@2.x:menu#sub-category-2-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
     "children": [
       "menu-item#sub-category-3-mob",
       "menu-item#sub-category-4-mob"

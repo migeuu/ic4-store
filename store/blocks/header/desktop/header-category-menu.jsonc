@@ -693,7 +693,7 @@
   },
   "menu-item#item-outlet": {
     "props": {
-      "blockClass": "outlet",
+      "blockClass": "secondaryItem",
       "id": "outlet",
       "type": "custom",
       "highlight": false,

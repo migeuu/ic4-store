@@ -149,7 +149,7 @@
 
 .styledLinkContent--primaryItem {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
@@ -157,7 +157,7 @@
   color: #441afa;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .menuItem--thirdiaryItem {
@@ -176,7 +176,7 @@
     margin-left: 1rem;
   }
 
-  .menuContainerNav--menuMobile {
+  .menuContainerNav {
     width: 100%;
   }
 
@@ -184,8 +184,8 @@
     display: none;
   }
 
-  .menuItem--news,
-  .menuItem--outlet,
+  .menuItem--primaryItem,
+  .menuItem--secondaryItem,
   .menuItem--departmentMobile {
     border-bottom: 1px solid #eeeeee;
   }
@@ -201,6 +201,16 @@
   .menuItem--departmentMobile--isOpen .styledLinkContent--departmentMobile {
     color: #441afa;
     font-weight: bold;
+  }
+
+  .menuItem .styledLinkIcon {
+    transform: rotate(0deg);
+    transition: all 300ms ease;
+  }
+
+  .menuItem--departmentMobile--isOpen .styledLinkIcon--departmentMobile,
+  .menuItem--subCategoryMob--isOpen .styledLinkIcon--subCategoryMob {
+    transform: rotate(180deg);
   }
 
   .menuItem--subCategoryMob .styledLinkContent--subCategoryMob {
