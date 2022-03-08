@@ -32,5 +32,12 @@
 
 .sliderLayoutContainer--deals {
   padding: 0 1rem 0 1rem;
-  background-color: red;
+}
+
+.slideChildrenContainer--shelf
+  :global(.vtex-stack-layout-0-x-stackContainer)
+  :nth-child(2n) {
+  position: absolute;
+  top: 35px;
+  width: 200px;
 }

@@ -38,16 +38,6 @@
     height: 50px;
   }
 
-  .flexRowContent--headerWrapper :global(.vtex-input__suffix) {
-    background-color: #441afa;
-  }
-
-  .flexRowContent--headerWrapper
-    :global(.vtex-store-components-3-x-searchBarIcon--search) {
-    padding: 5px;
-    color: white;
-  }
-
   .flexRowContent--headerWrapper :global(.vtex-styleguide-9-x-input) {
     width: 550px;
   }
@@ -79,6 +69,16 @@
     padding-left: 20px;
     color: white;
   }
+}
+
+:global(.vtex-input__suffix) {
+  background-color: #441afa;
+  padding: 8px 20px;
+}
+
+:global(.vtex-store-components-3-x-searchBarIcon) {
+  padding: 0;
+  color: white;
 }
 
 :global(.vtex-button):hover {

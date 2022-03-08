@@ -1,33 +1,39 @@
 {
   "flex-layout.row#department-slider": {
     "children": [
+      "rich-text#department-slider-title",
       "slider-layout#department-slider"
     ],
     "props": {
       "blockClass": "departmentSliderRow"
     }
   },
+  "rich-text#department-slider-title": {
+    "props": {
+      "text": "todos os departamentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "departmentSliderTitle"
+    }
+  },
   "slider-layout#department-slider": {
     "children": [
-      "flex-layout.col#department-item1"
-      // "flex-layout.col#department-item2",
-      // "flex-layout.col#department-item3",
-      // "flex-layout.col#department-item4",
-      // "flex-layout.col#department-item5",
-      // "flex-layout.col#department-item6",
-      // "flex-layout.col#department-item7",
-      // "flex-layout.col#department-item8"
+      "flex-layout.col#department-item1",
+      "flex-layout.col#department-item2",
+      "flex-layout.col#department-item3",
+      "flex-layout.col#department-item4",
+      "flex-layout.col#department-item5",
+      "flex-layout.col#department-item6",
+      "flex-layout.col#department-item7",
+      "flex-layout.col#department-item8"
     ],
     "props": {
+      "blockClass": "departmentSlider",
+      "showPaginationDots": "never",
       "itemsPerPage": {
-        "desktop": 8,
-        "mobile": 3
-      },
-      "autoplay": {
-        "timeout": 4000
-      },
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never"
+        "desktop": 7,
+        "phone": 3
+      }
     }
   }
 }

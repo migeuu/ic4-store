@@ -10,7 +10,6 @@
       "product-selling-price"
     ]
   },
-
   "flex-layout.row#list-price-savings": {
     "props": {
       "colGap": 2,

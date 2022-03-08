@@ -80,12 +80,8 @@
     background-color: #eee;
   }
 
+  /* PRIMEIRO PEGAR O ITEM PAI E DEFINIR O FIRST CHILD */
   .menuItem--categoryAllDep--isOpen :first-child {
-    color: #441afa;
-    font-weight: bold;
-  }
-
-  .styledLinkContent--categoryAllDep:hover {
     color: #441afa;
     font-weight: bold;
   }
@@ -97,10 +93,6 @@
 
   .styledLinkContent--categoryAllDep {
     font-size: 14px;
-  }
-
-  .styledLink--categoryAllDep--isOpen :first-child {
-    font-weight: bold;
   }
 
   .submenuContainer--submenuCategory {

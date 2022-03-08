@@ -1,0 +1,14 @@
+@media (max-width: 640px) {
+  .sliderLayoutContainer--departmentSlider,
+  .sliderLayoutContainer--bannerSlider {
+    padding: 0 50px;
+  }
+
+  .slide--departmentSlider {
+    width: 10% !important;
+  }
+
+  .paginationDotsContainer--shelf {
+    margin-bottom: -16px;
+  }
+}

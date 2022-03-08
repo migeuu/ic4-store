@@ -3,7 +3,13 @@
     "children": [
       "slider-layout#main-banner",
       "flex-layout.row#deals",
-      "flex-layout.row#department-slider"
+      "flex-layout.row#department-slider",
+      "flex-layout.row#info-card-people",
+      "flex-layout.row#news-sale",
+      "flex-layout.row#banner-slider",
+      "flex-layout.row#shelf",
+      "flex-layout.row#image-freight",
+      "flex-layout.row#shelf-2"
     ]
   },
   // SLIDER IMAGENS
@@ -28,6 +34,46 @@
     "props": {
       "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/shopnow___5a68202d2d18570657c20bdef7d389a5.png"
     }
-  }
+  },
   // SLIDER IMAGENS
+  // INFO CARD
+  "flex-layout.row#info-card-people": {
+    "children": [
+      "info-card#people"
+    ],
+    "props": {
+      "blockClass": "infoCardRow"
+    }
+  },
+  "info-card#people": {
+    "props": {
+      "id": "info-card-people",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/people___fca0110d929a1008df2455d67042608a.png",
+      "headline": "LOREM IPSUM",
+      "subhead": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.",
+      "callToActionText": "LOREM IPSUM  ➞",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "infoCardPeople"
+    }
+  },
+  // INFO CARD
+  "flex-layout.row#image-freight": {
+    "children": [
+      "image#freight"
+    ],
+    "props": {
+      "blockClass": "imageFreightContainer",
+      "fullWidth": true
+    }
+  },
+  "image#freight": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/banner-sale___36d41ef747ee1a91e939958082369d83.png",
+      "link": {
+        "url": "https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-image"
+      }
+    }
+  }
 }

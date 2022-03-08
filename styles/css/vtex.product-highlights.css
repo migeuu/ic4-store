@@ -1,12 +1,15 @@
-.productHighlightWrapper--collection {
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  width: 200px;
+.productHighlightText {
+  font-size: 12px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
 }
 
-.productHighlightText {
-  background: antiquewhite;
-  border-radius: 20px;
+.productHighlightText--new {
+  font-size: 12px;
+  background: #441afa;
+  color: white;
+  text-transform: uppercase;
   padding: 5px 10px;
 }

@@ -3,29 +3,29 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
-      "add-to-cart-button"
+      "flex-layout.row#quantity-buy"
     ]
   },
   "flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"
     },
-    "children": ["product-rating-inline"]
+    "children": [
+      "product-rating-inline"
+    ]
   },
-
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
       "vtex.product-highlights@2.x:product-highlights#collection",
+      "vtex.product-highlights@2.x:product-highlights#new",
       "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
-
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
@@ -33,25 +33,61 @@
       "maxHeight": 300
     }
   },
-
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
-      "type": "collection"
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "Inovação"
+        ]
+      }
     },
-    "children": ["product-highlight-wrapper"]
+    "children": [
+      "product-highlight-wrapper"
+    ]
   },
   "product-highlight-wrapper": {
     "props": {
       "blockClass": "collection"
     },
-    "children": ["product-highlight-text"]
+    "children": [
+      "product-highlight-text"
+    ]
   },
   "product-highlight-text": {
     "props": {
       "message": "{highlightName}"
     }
   },
-
+  "vtex.product-highlights@2.x:product-highlights#new": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "Novidade"
+        ]
+      }
+    },
+    "children": [
+      "product-highlight-wrapper#new"
+    ]
+  },
+  "product-highlight-wrapper#new": {
+    "props": {
+      "blockClass": "new"
+    },
+    "children": [
+      "product-highlight-text#new"
+    ]
+  },
+  "product-highlight-text#new": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": "new"
+    }
+  },
   "product-list-price#summary": {
     "props": {
       "blockClass": "summary"
@@ -84,7 +120,23 @@
       "markers": [
         "discount"
       ],
+      "message": "-{savingsPercentage}",
       "blockClass": "summary"
+    }
+  },
+  "flex-layout.row#quantity-buy": {
+    "children": [
+      "product-summary-quantity#custom-summary",
+      "add-to-cart-button#buyNow"
+    ],
+    "props": {
+      "blockClass": "quantityBuy"
+    }
+  },
+  "product-summary-quantity#custom-summary": {
+    "props": {
+      "showLabel": false,
+      "size": "small"
     }
   }
 }

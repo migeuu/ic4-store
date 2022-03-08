@@ -1,0 +1,65 @@
+{
+  "flex-layout.row#banner-slider": {
+    "children": [
+      "rich-text#banner-slider",
+      "slider-layout#banner-slider"
+    ]
+  },
+  // TITULO DOS BANNERS
+  "rich-text#banner-slider": {
+    "props": {
+      "text": "**título de\n banners**",
+      "blockClass": "bannerSliderTitle",
+      "textPosition": "CENTER"
+    }
+  },
+  // BANNER SLIDER
+  "slider-layout#banner-slider": {
+    "children": [
+      "image#banner-electronics",
+      "image#banner-clothes",
+      "image#banner-accessories",
+      "image#banner-perfumes",
+      "image#banner-cosmetics",
+      "image#banner-shoes"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "blockClass": "bannerSlider"
+    }
+  },
+  // IMAGENS/ITENS DO SLIDER
+  "image#banner-electronics": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/group1-electronics___56fcf71c5dcfd65f5f1ee30acd615967.png"
+    }
+  },
+  "image#banner-clothes": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/group1-clothes___f5a5b47c788f48129bba9c147da1333f.png"
+    }
+  },
+  "image#banner-accessories": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/group1-glasses___0673ff10ddf8b686fee40da9df739ac0.png"
+    }
+  },
+  "image#banner-perfumes": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/group1-perfume___461b939c13a1881cd661931f7e2f30ee.png"
+    }
+  },
+  "image#banner-cosmetics": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/group1-cosmetics___424157b7dbd1d7e4aaf5a069c79ad12e.png"
+    }
+  },
+  "image#banner-shoes": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/group1-sneakers___8724f5d5e4923cfea3dc5103cdf5b6ce.png"
+    }
+  }
+}

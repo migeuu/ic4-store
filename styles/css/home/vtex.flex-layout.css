@@ -1,0 +1,85 @@
+@media (max-width: 640px) {
+  .flexCol--itemContainer {
+    align-items: center;
+  }
+
+  .flexRow--infoCardRow {
+    margin-top: 30px;
+  }
+
+  .flexRow--infoCardRow :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flexRow--newsSaleRow :global(.vtex-store-components-3-x-container) {
+    padding: 60px 20px 20px 20px;
+  }
+
+  .flexRow--newsImageRow {
+    margin-bottom: 20px;
+  }
+
+  .flexRowContent--quantityBuy {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexRow--quantityBuy
+    :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+    margin: 0;
+  }
+
+  .flexRow--quantityBuy :global(.vtex-numeric-stepper__input) {
+    font-size: 1rem;
+    height: 40px;
+    width: 35px;
+    border: none;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    color: #989898;
+  }
+
+  .flexRowContent--quantityBuy :global(.vtex-numeric-stepper__minus-button) {
+    background: none;
+    font-size: 1.5rem;
+    width: 20px !important;
+    height: 40px;
+    border: none;
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    color: #989898;
+    padding-left: 5px;
+  }
+
+  .flexRowContent--quantityBuy :global(.vtex-numeric-stepper__plus-button) {
+    font-size: 1.5rem;
+    width: 20px !important;
+    height: 40px;
+    border: none;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    color: #989898;
+    padding-right: 5px;
+  }
+
+  .flexRowContent--quantityBuy :global(.vtex-button) {
+    border: 1px solid #441afa;
+    border-radius: 0;
+    background-color: #441afa;
+  }
+
+  .flexRowContent--quantityBuy :global(.vtex-button__label) {
+    padding: 0 8px !important;
+  }
+
+  .flexRow--shelf {
+    margin-bottom: 5rem;
+  }
+
+  .flexRow--imageFreightContainer {
+    margin: 30px 0;
+  }
+}

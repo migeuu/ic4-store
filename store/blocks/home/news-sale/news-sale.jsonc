@@ -1,0 +1,40 @@
+{
+  "flex-layout.row#news-sale": {
+    "children": [
+      "flex-layout.row#news-banner",
+      "flex-layout.row#sales-banner"
+    ],
+    "props": {
+      "blockClass": "newsSaleRow"
+    }
+  },
+  "flex-layout.row#news-banner": {
+    "children": [
+      "image#news"
+    ],
+    "props": {
+      "blockClass": "newsImageRow"
+    }
+  },
+  "flex-layout.row#sales-banner": {
+    "children": [
+      "image#sale"
+    ]
+  },
+  "image#news": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/Componente-7281___328c96c5721cb5497e1f0d655e7b8380.png",
+      "link": {
+        "url": "https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-image"
+      }
+    }
+  },
+  "image#sale": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/mobile/Componente73-12___b0f60b0e6f46868049d3ae6614b92d72.png",
+      "link": {
+        "url": "https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-image"
+      }
+    }
+  }
+}

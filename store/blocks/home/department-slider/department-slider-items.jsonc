@@ -5,7 +5,9 @@
       "image#dep-item1",
       "rich-text#dep-item1"
     ],
-    "props": {}
+    "props": {
+      "blockClass": "itemContainer"
+    }
   },
   "image#dep-item1": {
     "props": {
@@ -15,25 +17,154 @@
   "rich-text#dep-item1": {
     "props": {
       "text": "DEPARTAMENTO 1",
-      "blockClass": "departmentItemTitle"
+      "blockClass": "itemText"
     }
   },
   // DEPARTAMENTO 2
   "flex-layout.col#department-item2": {
     "children": [
-      "image#dep-item1",
-      "rich-text#dep-item1"
+      "image#dep-item2",
+      "rich-text#dep-item2"
     ],
-    "props": {}
+    "props": {
+      "blockClass": "itemContainer"
+    }
   },
   "image#dep-item2": {
     "props": {
-      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/clothes___c3a9e2e14650448ec2511a871e1b8568.png"
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/smartwatch___dcc5f4d8efde59888190c4ad91ee1ce0.png"
     }
   },
   "rich-text#dep-item2": {
     "props": {
-      "text": "DEPARTAMENTO 2"
+      "text": "DEPARTAMENTO 2",
+      "blockClass": "itemText"
+    }
+  },
+  // DEPARTAMENTO 3
+  "flex-layout.col#department-item3": {
+    "children": [
+      "image#dep-item3",
+      "rich-text#dep-item3"
+    ],
+    "props": {
+      "blockClass": "itemContainer"
+    }
+  },
+  "image#dep-item3": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/jackets___8b8d3dde6a1c7802a00d6cc0e6a2c2c1.png"
+    }
+  },
+  "rich-text#dep-item3": {
+    "props": {
+      "text": "DEPARTAMENTO 3",
+      "blockClass": "itemText"
+    }
+  },
+  // DEPARTAMENTO 4
+  "flex-layout.col#department-item4": {
+    "children": [
+      "image#dep-item4",
+      "rich-text#dep-item4"
+    ],
+    "props": {
+      "blockClass": "itemContainer"
+    }
+  },
+  "image#dep-item4": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/glasses___342c25abe1df1d99d53c5e09ea652c90.png"
+    }
+  },
+  "rich-text#dep-item4": {
+    "props": {
+      "text": "DEPARTAMENTO 4",
+      "blockClass": "itemText"
+    }
+  },
+  // DEPARTAMENTO 5
+  "flex-layout.col#department-item5": {
+    "children": [
+      "image#dep-item5",
+      "rich-text#dep-item5"
+    ],
+    "props": {
+      "blockClass": "itemContainer"
+    }
+  },
+  "image#dep-item5": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/hoodies___4e14fd67b7ec0ddf2c987386cb420ebf.png"
+    }
+  },
+  "rich-text#dep-item5": {
+    "props": {
+      "text": "DEPARTAMENTO 5",
+      "blockClass": "itemText"
+    }
+  },
+  // DEPARTAMENTO 6
+  "flex-layout.col#department-item6": {
+    "children": [
+      "image#dep-item6",
+      "rich-text#dep-item6"
+    ],
+    "props": {
+      "blockClass": "itemContainer"
+    }
+  },
+  "image#dep-item6": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/logo-games___c72de2ef5698ce580a860ff3d64f241a.png"
+    }
+  },
+  "rich-text#dep-item6": {
+    "props": {
+      "text": "DEPARTAMENTO 6",
+      "blockClass": "itemText"
+    }
+  },
+  // DEPARTAMENTO 7
+  "flex-layout.col#department-item7": {
+    "children": [
+      "image#dep-item7",
+      "rich-text#dep-item7"
+    ],
+    "props": {
+      "blockClass": "itemContainer"
+    }
+  },
+  "image#dep-item7": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/masks___fdf8856004208fc37f1d6c12717a7084.png"
+    }
+  },
+  "rich-text#dep-item7": {
+    "props": {
+      "text": "DEPARTAMENTO 7",
+      "blockClass": "itemText"
+    }
+  },
+  // DEPARTAMENTO 8
+  "flex-layout.col#department-item8": {
+    "children": [
+      "image#dep-item8",
+      "rich-text#dep-item8"
+    ],
+    "props": {
+      "blockClass": "itemContainer"
+    }
+  },
+  "image#dep-item8": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/electronics___9ebae85c4364fac363971a1c30d7cd2d.png"
+    }
+  },
+  "rich-text#dep-item8": {
+    "props": {
+      "text": "DEPARTAMENTO 8",
+      "blockClass": "itemText"
     }
   }
 }
